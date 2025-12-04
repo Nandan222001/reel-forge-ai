@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Check, Zap } from "lucide-react";
@@ -137,8 +138,9 @@ const PricingSection = () => {
                 variant={tier.popular ? "hero" : "outline"}
                 className="w-full"
                 size="lg"
+                asChild
               >
-                {tier.cta}
+                <Link to="/auth">{tier.cta}</Link>
               </Button>
             </motion.div>
           ))}
