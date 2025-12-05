@@ -59,8 +59,10 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           >
             <Button variant="hero" size="xl" className="group" asChild>
-              <Link to="/auth">Get Started Free</Link>
-              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              <Link to="/auth">
+                Get Started Free
+                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
             <Button variant="glass" size="xl" className="group">
               <Play className="w-5 h-5" />
